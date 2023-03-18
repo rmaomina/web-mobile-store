@@ -67,7 +67,7 @@ function scrollToAnchor(tg) {
 
 function initSplash() {
   let video = document.createElement('video');
-  video.src = './assets/video/intro.mp4';
+  video.src = './assets/video/intro2.mp4';
   video.muted = true;
   video.autoplay = true;
   video.defaultMuted = true;
@@ -76,6 +76,7 @@ function initSplash() {
   setTimeout(() => {
     let splash = document.querySelector('#splash')
     let wrapper = document.querySelector('#wrapper')
+    splash.textContent = ""
     splash.classList.remove('active')
     wrapper.classList.add('active')
   }, 2500)
